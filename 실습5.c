@@ -4,8 +4,7 @@
 #define ROWS    3
 #define COLS    3
 
-void addMatrix(int A[][COLS],int B[][COLS],int C[][COLS]);
-void printMatrix(int A[][COLS]);
+
 
 void addMatrix(int A[][COLS],int B[][COLS],int C[][COLS])
 {
@@ -23,11 +22,12 @@ void printMatrix(int A[][COLS])
 	int i,j;
 	for (i = 0; i < ROWS; i++) {
         for (j = 0; j < COLS; j++) {
-            printf("%d ", A[i][j]);
+            printf("%d ", A[i][j]);  // %d(space) make!! 
         }
-        printf("\n");
+        printf("\n");// enter make!! 
     }
 }
+
 int main(int argc, char *argv[]) { 
 	int A[ROWS] [COLS] = {
 		{2,3,0},
@@ -45,7 +45,7 @@ int main(int argc, char *argv[]) {
 	addMatrix(A,B,C);
 	
 	printf("Matrix C:\n");
-	printMatrix(C);
+	printMatrix(C); 
 	
 	return 0;
 }
